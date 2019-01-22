@@ -9,18 +9,32 @@
 	var grad_sum = 0;
 	for(i=0;i<student.length;i++){
 		grad_sum += student[i][1];
+		document.write(student[i][0]+" has " + student[i][1] + " points ")
+		
+
+		if (student[i][1]<60) {
+			document.write("and your grade is F!");
+		}
+		else if (student[i][1]<70) {
+	   		document.write("and your grade is D!");
+		}
+		else if (student[i][1]<80) {
+	   		document.write("and your grade is C!");
+		}
+		else if (student[i][1]<90) {
+	   		document.write("and your grade is B!");
+		}
+		else {
+	   		document.write("and your grade is A!");
+		}
+		document.write("<br>");
+
 	}
 	
-	for(i=0;i<student.length;i++){
-		document.write(student[i][0]+" has " + student[i][1] + " points.<br>")
-	}
+	
 	document.write("The average grade of this class is: "+(grad_sum/student.length)+"<br>");
 
 
-	
-
-
-       
 	</script>
 
 </body>
