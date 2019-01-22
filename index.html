@@ -18,8 +18,23 @@
 			}
 
 		}
-		document.write(temperature());
+		document.write(temperature()+"<br>");
 
+
+		function highestValue(searchArray){
+			document.write("Your Array: " + searchArray + "<br>")
+
+			var retVal = searchArray[0];
+
+			for(i=1;i<searchArray.length;i++){
+				if(searchArray[i]>retVal){
+					retVal = searchArray[i];
+				}
+			}
+			return retVal;
+		}
+
+		document.write("The highest Value of your Array is: " + highestValue([1, 7, -3, 9]));
 
 	</script>
 
