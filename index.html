@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>basic 1</title>
 </head>
 <body>
+	<script>
+		function temperature(){
+			var randomUnm= Math.floor((Math.random()*31));
+			randomUnm-=5;
+			document.write(randomUnm+ "<br>");
+			if(randomUnm<11){
+				return "thr wather is cold";
+
+			}
+			else{
+				return "the wather is moderate";
+			}
+
+		}
+		document.write(temperature());
+
+
+	</script>
 
 </body>
 </html>
