@@ -5,11 +5,21 @@
 </head>
 <body>
 	<script>
-	var student =[["martin",76],["thomas",85],["klaus",65],["maria",93],["david"81]];
+	var student =[["martin",76],["thomas",85],["klaus",65],["maria",93],["david",81]];
+	var grad_sum = 0;
+	for(i=0;i<student.length;i++){
+		grad_sum += student[i][1];
+	}
+	
+	for(i=0;i<student.length;i++){
+		document.write(student[i][0]+" has " + student[i][1] + " points.<br>")
+	}
+	document.write("The average grade of this class is: "+(grad_sum/student.length)+"<br>");
+
+
 	
 
 
-	 
        
 	</script>
 
