@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic3</title>
+</head>
+<body>
+	<script>
+		function product(searchArray){
+			document.write("Your Array: " + searchArray + "<br>")
+
+			var product=1;
+			for(i=0;i<searchArray.length;i++){
+				product*=searchArray[i];
+			}
+			return product;
+		}
+
+		document.write("Theprosuct  of your Array is: " +product([1, 3, 7,10,2]));
+
+	</script>
+
+</body>
+</html>
