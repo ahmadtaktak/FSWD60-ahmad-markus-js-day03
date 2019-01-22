@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>basic 4</title>
+</head>
+<body>
+	<script>
+		function temperature(){
+			var randomUnm= Math.floor((Math.random()*65));
+			randomUnm-=25;
+			document.write("<div>");
+			document.write("The temperature is: " + randomUnm+ "<br>");
+			document.write("</div>");
+			document.write("<div>");
+			if (randomUnm<-11){
+				document.write("<figure><img src=\"img/icecold.jpg\"></img>");
+				document.write("<figcaption>"+"The weather is ice-cold!!!"+"</figcaption></figure>");
+			}
+			else if(randomUnm<11){
+				document.write("<figure><img src=\"img/cold.jpg\"></img>");
+				document.write("<figcaption>"+"The weather is cold!"+"</figcaption></figure>");
+
+			}
+			else if(randomUnm>10 && randomUnm<20){
+				document.write("<figure><img src=\"img/moderate.jpg\"></img>");
+				document.write("<figcaption>"+"The weather is moderate!"+"</figcaption></figure>");
+			}
+			else if(randomUnm>19 && randomUnm<30){
+				document.write("<figure><img src=\"img/warm.jpg\"></img>");
+				document.write("<figcaption>"+"The weather is warm!!!"+"</figcaption></figure>");
+			}
+			else{
+				document.write("<figure><img src=\"img/hot.jpg\"></img>");
+				document.write("<figcaption>"+"The weather is hot!!!"+"</figcaption></figure>");
+			}
+			document.write("</div>");
+	}
+		temperature();
+
+	</script>
+
+</body>
+</html>
